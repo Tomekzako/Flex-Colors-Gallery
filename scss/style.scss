@@ -4,40 +4,69 @@
     box-sizing: border-box;
 }
 
-.block{
-    color: white;
-    text-align: center;
-    font-size: 5em;
-    padding: 10px;
+html {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Ravi Prakash', cursive;
+    background: #ffc600;
 }
 
-.block__box1{
-    background-color: aqua;
+.flex-container {
+    display: flex;
+    border: 10px solid orange;
+    min-height: 100vh;
+    overflow: hidden;
 }
-.block__box2{
-    background-color: khaki;
+
+.block {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    background: #6B0F9C;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    &>* {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+        border: 1px solid red;
+        flex: 1 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    p {
+        text-transform: uppercase;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
+        &:nth-child(2) {
+            font-size: 4em;
+        }
+    }
 }
-.block__box3{
-    background-color: coral;
+
+.block__box1 {
+    background-image: url(../images/mount-everest.jpg);
 }
-.block__box4{
-    background-color: navy;
+
+.block__box2 {
+    background-image: url(../images/K2.jpg);
 }
-.block__box5{
-    background-color: yellow;
+
+.block__box3 {
+    background-image: url(../images/Kangchenjunga.JPG);
 }
-.block__box6{
-    background-color: crimson;
+
+.block__box4 {
+    background-image: url(../images/Lhotse.jpg);
 }
-.block__box7{
-    background-color: greenyellow;
-}
-.block__box8{
-    background-color: burlywood;
-}
-.block__box9{
-    background-color: lightskyblue;
-}
-.block__box10{
-    background-color: aquamarine;
+
+.block__box5 {
+    background-image: url(../images/makalu.jpg);
 }
